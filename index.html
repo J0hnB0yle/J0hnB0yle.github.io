@@ -347,6 +347,55 @@
                 height: 150px;
             }
         }
+/* Fix for About Me section */
+.about-content {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+/* Improved Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.skill-card {
+    background-color: var(--light);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.skill-card h3 {
+    color: var(--secondary);
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.skill-card ul {
+    padding-left: 20px;
+}
+
+.skill-card li {
+    margin-bottom: 8px;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+        
     </style>
 </head>
 <body>
